@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY LOVEEEEEEEEEEE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffc0cb;
+            font-family: 'Pacifico', cursive;
+            text-align: center;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 4rem;
+            margin-top: 50px;
+        }
+        p {
+            font-size: 2rem;
+        }
+        a {
+            color: #ffffff;
+            font-size: 1.5rem;
+            text-decoration: none;
+            border: 2px solid white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #ff69b4;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        /* Flower animation */
+        .flower {
+            width: 100px;
+            height: 100px;
+            background-color: #ff69b4;
+            border-radius: 50%;
+            position: relative;
+            margin: 0 auto;
+            animation: bloom 3s infinite ease-in-out;
+        }
+        .flower::before, .flower::after {
+            content: '';
+            width: 100px;
+            height: 100px;
+            background-color: #ff69b4;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .flower::before {
+            top: -50px;
+            left: 0;
+        }
+        .flower::after {
+            top: 0;
+            left: -50px;
+        }
+        @keyframes bloom {
+            0%, 100% {
+                transform: scale(0.8);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>IKA I LOVE YOUUUUUUU</h1>
+    <div class="flower"></div>
+    <div class="container">
+        <p>Click on the buttons below to see more pages!</p>
+        <a href="page1.html">Reasons I Love You</a>
+        <br><br>
+        <a href="page2.html">Memories Together</a>
+        <br><br>
+        <a href="page3.html">Future Dreams</a>
+    </div>
+</body>
+</html>
